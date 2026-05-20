@@ -7,3 +7,24 @@ export type Property = {
   rating: number
   image: string
 }
+export type Room = {
+  id: string
+  name: string
+  price: string
+  seatsTotal: number
+  seatsFree: number
+  hasAC: boolean
+}
+
+export type PropertyDetail = {
+  id: string
+  title: string
+  address: string
+  amenities: string[]
+  rating: number
+  seatsAvailable: number
+  minStay: string
+  startingPrice: string
+  image: string
+  rooms: Room[]
+}
